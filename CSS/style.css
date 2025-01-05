@@ -1,0 +1,219 @@
+/* css reset  */
+*{
+    margin: 0px;
+    padding: 0px
+}
+html{
+scroll-behavior: smooth;
+}
+/* CSS Vriable */
+:root{
+    --navbar-height: 30px
+
+}
+
+/* navigation bar  */
+#navbar{
+    top: 0px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    z-index: 1000;
+
+}
+
+
+#navbar::before{
+    content: "";
+    top: 0px;
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.93;
+
+}
+/* logo: navbar */
+#logo{
+    margin: 5px 19px;
+}
+#logo img{
+    height: 60px;
+    width: 60px;
+    margin: 8px 4px;
+}
+/* list styling navbar */
+#navbar ul{
+    display: flex;
+    align-items: center;
+}
+#navbar ul li{
+    font-size: 20px;
+    list-style: none;
+
+}
+#navbar ul li a{
+color: aliceblue;
+    display: block;
+    text-decoration: none;
+    padding: 3px 14px; 
+}
+#navbar ul li a:hover{
+    background-color: rgb(25, 252, 5);
+    border-radius: 10px;
+
+}
+/* home section  */
+#home{
+    display:flex;
+    height: 438px;
+    top: 0px;
+    flex-direction: column;
+    padding: 7px 50px;
+    align-items: center;
+    justify-content: center;
+}
+#home::before{
+    content: "";
+    background-color:black;
+    background: url('../nature.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 71%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+#home h1{
+    color: aqua;
+    text-align: center;
+}
+#home p{
+    color:white ;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+
+}
+/* services section  */
+   #services{
+    margin: 30px;
+    display: flex;
+   }
+   #services .box{
+      border: 2px solid red;
+      margin: 10px;
+      padding: 15px;
+      border-radius: 20px;
+      background-color: rgb(5, 184, 255);
+
+   }
+   .box p{
+    font-size: 1.2rem;
+   }
+   #services .box img {
+      height: 160px;
+      margin: auto;
+      display: block;
+
+   }
+ /* client section */
+     #client-section{
+        position: relative;
+         /* height: 333px; */
+         
+     }
+     #client-section::before{
+        background: url('../20.jpg') no-repeat center center/cover;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.98;
+     }
+     #clients{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+     #clients img{
+        height: 120px;
+        border-radius: 20px;
+     }
+     .client-item{
+        padding: 34px;
+     }
+
+/* utility classes */
+.btn{
+    padding: 4px;
+    margin: 15px;
+    font-size: 1.1rem;
+    border-radius: 9px;
+    background-color: rgb(24, 253, 3);
+    cursor: pointer;
+}
+  .btn:hover{
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+.h-primary{
+    font-size: 3.1rem;
+    padding: 10px;
+    text-align: center;
+}
+.h-secondary{
+    font-size: 2.3rem;
+    padding: 10px;
+    text-align: center;
+}
+/* contact section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "" ;
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 1.1;
+    background: url('../15.jpg') no-repeat center center/cover;
+
+
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid red;
+    border-radius: 10px;
+
+
+}
+#contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.1rem;
+}
+/* #clients img::before{
+    content: "";
+    position: absolute;
+    z-index: -2;
+    
+} */
